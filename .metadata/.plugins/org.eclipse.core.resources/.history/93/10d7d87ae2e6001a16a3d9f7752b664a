@@ -1,0 +1,80 @@
+package Questao3;
+
+import java.awt.EventQueue;
+
+import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import javax.swing.JTabbedPane;
+import javax.swing.JPanel;
+import java.awt.Color;
+import net.miginfocom.swing.MigLayout;
+import javax.swing.JTextField;
+import javax.swing.JFormattedTextField;
+
+public class questao1_internalf extends JInternalFrame {
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					questao1_internalf frame = new questao1_internalf();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public questao1_internalf() {
+		setBounds(100, 100, 548, 330);
+		setResizable(false);
+		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.BOTTOM);
+		getContentPane().add(tabbedPane, BorderLayout.CENTER);
+		
+		JPanel panel_dados = new JPanel();
+		panel_dados.setBackground(new Color(0, 153, 255));
+		tabbedPane.addTab("New tab", null, panel_dados, null);
+		panel_dados.setLayout(new MigLayout("", "[]", "[][]"));
+		
+		JLabel lblNewLabel = new JLabel("Nome:");
+		panel_dados.add(lblNewLabel, "flowx,cell 0 0");
+		
+		textField = new JTextField();
+		textField.setColumns(10);
+		panel_dados.add(textField, "cell 0 0");
+		
+		JLabel lblNewLabel_1 = new JLabel("Data de Nascimeto:");
+		panel_dados.add(lblNewLabel_1, "flowx,cell 0 1");
+		
+		JFormattedTextField formattedTextField_2 = new JFormattedTextField();
+		panel_dados.add(formattedTextField_2, "cell 0 1,growx");
+		
+		JPanel panel_anmnese = new JPanel();
+		panel_anmnese.setBackground(new Color(255, 255, 102));
+		tabbedPane.addTab("New tab", null, panel_anmnese, null);
+		panel_anmnese.setLayout(new MigLayout("", "[]", "[]"));
+		
+		JPanel panel_exames = new JPanel();
+		panel_exames.setBackground(new Color(51, 255, 153));
+		tabbedPane.addTab("New tab", null, panel_exames, null);
+		panel_exames.setLayout(new MigLayout("", "[]", "[]"));
+		
+		JPanel panel_tratamento = new JPanel();
+		panel_tratamento.setBackground(new Color(204, 153, 255));
+		tabbedPane.addTab("New tab", null, panel_tratamento, null);
+		panel_tratamento.setLayout(new MigLayout("", "[]", "[]"));
+
+	}
+
+}
