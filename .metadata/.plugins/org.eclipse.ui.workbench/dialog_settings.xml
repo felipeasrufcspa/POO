@@ -5,7 +5,7 @@
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wb.swing.JInternalFrame"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wb.swing.JFrame"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.wb"/>
 			<item value="org.eclipse.wb/org.eclipse.wb.swing"/>
@@ -38,6 +38,9 @@
 	<section name="ZipFileImportWizard">
 		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="true"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\felip\Downloads\trabalhofinalPOO.zip"/>
+			<item value="C:\Users\felip\Downloads\TrabalhoPOO-master.zip"/>
+			<item value="C:\Users\felip\Downloads\aula14_SelectSQL.zip"/>
 			<item value="C:\Users\felip\Downloads\aula08.zip"/>
 			<item value="C:\Users\felip\Downloads\jTabbed.zip"/>
 			<item value="C:\Users\felip\Downloads\EmillynSouza-Aula3.zip"/>
