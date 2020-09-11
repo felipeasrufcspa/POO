@@ -54,7 +54,10 @@ class calculadora {
 				controle++;			
 			}
 			
-					
+			if(controle == 0) {
+				System.out.println("Oopração inválida, Tente novamente!");
+							
+			}		
  }
 
 
